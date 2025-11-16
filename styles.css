@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@font-face {
+  font-family: 'Balonku';
+  src: url('fonts/Balonku-Regular.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff8f0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Main container */
+.container {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Logo animation */
+.logo {
+  width: 40%;
+  margin-bottom: 20px;
+  animation: bounce 2.4s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Logo text animation */
+.logo-text {
+font-family: 'Fredoka One', sans-serif;
+  font-size: 10rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  animation: bounce 2.4s infinite ease-in-out;
+}
+
+.logo-text span {
+font-family: 'Fredoka One', sans-serif;
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  text-shadow: 2px 2px 0 #6a4c93, -2px -2px 0 #6a4c93, 2px -2px 0 #6a4c93, -2px 2px 0 #6a4c93;
+  animation: letterBounce 2.4s infinite ease-in-out;
+}
+
+.logo-text span:nth-child(1) { animation-delay: 0s; color: #FFB6C1; }
+.logo-text span:nth-child(2) { animation-delay: 0.1s; color: #FFD966; }
+.logo-text span:nth-child(3) { animation-delay: 0.2s; color: #A4D8F0; }
+.logo-text span:nth-child(4) { animation-delay: 0.3s; color: #C7A9E6; }
+.logo-text span:nth-child(5) { animation-delay: 0.4s; color: #F7CAC9; }
+.logo-text span:nth-child(6) { animation-delay: 0.5s; color: #FFB6C1; }
+.logo-text span:nth-child(7) { animation-delay: 0.6s; color: #FFD966; }
+.logo-text span:nth-child(8) { animation-delay: 0.7s; color: #A4D8F0; }
+.logo-text span:nth-child(9) { animation-delay: 0.8s; color: #C7A9E6; }
+
+@keyframes letterBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Tagline */
+.tagline {
+  margin: 10px auto 20px;
+  color: #7f6ca8;
+  font-size: 3rem;
+  max-width: 50%;
+  font-weight: 400;
+}
+
+/* Texts */
+h1 {
+  margin-top: 20px;
+  color: #6a4c93;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 15px auto 25px;
+  color: #7f6ca8;
+  font-size: 1.2rem;
+  max-width: 420px;
+}
+
+.contact {
+  margin-top: 30px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Balloons animation */
+.balloons {
+  font-size: 2.2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Floating balloons */
+.floating-balloons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.balloon {
+  position: absolute;
+  font-size: 2rem;
+  animation: rise 8s linear infinite;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.balloon:nth-child(1) {
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.balloon:nth-child(2) {
+  left: 15%;
+  animation-delay: 0.5s;
+}
+
+.balloon:nth-child(3) {
+  left: 25%;
+  animation-delay: 1s;
+}
+
+.balloon:nth-child(4) {
+  left: 35%;
+  animation-delay: 1.5s;
+}
+
+.balloon:nth-child(5) {
+  left: 45%;
+  animation-delay: 2s;
+}
+
+.balloon:nth-child(6) {
+  left: 55%;
+  animation-delay: 2.5s;
+}
+
+.balloon:nth-child(7) {
+  left: 65%;
+  animation-delay: 3s;
+}
+
+.balloon:nth-child(8) {
+  left: 75%;
+  animation-delay: 3.5s;
+}
+
+.balloon:nth-child(9) {
+  left: 85%;
+  animation-delay: 4s;
+}
+
+.balloon:nth-child(10) {
+  left: 95%;
+  animation-delay: 4.5s;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -50px;
+    opacity: 0;
+    transform: translateY(0) rotate(0deg);
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
+
+footer {
+  margin-top: 35px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Confetti canvas */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
