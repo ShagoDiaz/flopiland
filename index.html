@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlopiLand - Próximamente</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff8f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #6a4c93;
+    }
+
+    .container {
+      max-width: 500px;
+      padding: 20px;
+      animation: fadeIn 1.3s ease;
+    }
+
+    .logo {
+      width: 200px;
+      margin: 0 auto 25px;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+      color: #6a4c93;
+    }
+
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+      color: #5a5a5a;
+    }
+
+    .balloons {
+      width: 230px;
+      margin: 15px auto 25px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .footer {
+      font-size: 0.85rem;
+      margin-top: 35px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <img class="logo" src="https://raw.githubusercontent.com/placeholder/flopiland-logo.png" alt="FlopiLand Logo">
+
+    <h1>¡Estamos preparando algo mágico!</h1>
+
+    <p>
+      Nuestro salón de cumpleaños infantiles <strong>FlopiLand</strong><br>
+      abrirá sus puertas muy pronto.
+    </p>
+
+    <img class="balloons" src="https://raw.githubusercontent.com/placeholder/balloons.png" alt="Globos">
+
+   
+
+    <div class="footer">
+      © 2025 FlopiLand — Todos los derechos reservados.
+    </div>
+  </div>
+
+</body>
+</html>
