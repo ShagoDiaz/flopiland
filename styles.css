@@ -102,8 +102,11 @@ h1 {
 
 /* Balloons animation */
 .balloons {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   animation: float 3s ease-in-out infinite;
+}
+.balloons img{
+   size: 10%;
 }
 
 @keyframes float {
@@ -133,53 +136,30 @@ h1 {
 
 .balloon:nth-child(1) {
   left: 5%;
-  animation-delay: 0s;
+  animation-delay: 3s;
 }
 
 .balloon:nth-child(2) {
-  left: 15%;
+  left: 25%;
   animation-delay: 0.5s;
 }
 
 .balloon:nth-child(3) {
-  left: 25%;
-  animation-delay: 1s;
-}
-
-.balloon:nth-child(4) {
-  left: 35%;
-  animation-delay: 1.5s;
-}
-
-.balloon:nth-child(5) {
   left: 45%;
   animation-delay: 2s;
 }
 
-.balloon:nth-child(6) {
-  left: 55%;
-  animation-delay: 2.5s;
-}
-
-.balloon:nth-child(7) {
+.balloon:nth-child(4) {
   left: 65%;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 
-.balloon:nth-child(8) {
-  left: 75%;
-  animation-delay: 3.5s;
-}
-
-.balloon:nth-child(9) {
+.balloon:nth-child(5) {
   left: 85%;
   animation-delay: 4s;
 }
 
-.balloon:nth-child(10) {
-  left: 95%;
-  animation-delay: 4.5s;
-}
+
 
 @keyframes rise {
   0% {
