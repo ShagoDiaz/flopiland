@@ -28,7 +28,7 @@ body {
 
 /* Logo animation */
 .logo {
-  width: 40%;
+  width: 35%;
   margin-bottom: 20px;
   animation: bounce 2.4s infinite ease-in-out;
 }
