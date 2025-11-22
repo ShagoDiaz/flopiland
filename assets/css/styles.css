@@ -198,7 +198,7 @@ footer {
 }
 
 /* Mobile responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 802px) {
   .container {
     padding: 20px 10px;
   }
