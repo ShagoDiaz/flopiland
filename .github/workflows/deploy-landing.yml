@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 2222
           source: ./*
-          target: "/var/www/flopiland"
+          target: "/opt/apps/landing"
           rm: true
 
       - name: Restart nginx
