@@ -1,0 +1,12 @@
+name: Test SSH
+
+on: [workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Try connect
+        run: |
+          timeout 10 bash -c "cat < /dev/null > /dev/tcp/167.88.33.138/2222" \
+            && echo 'OPEN' || echo 'BLOCKED'
